@@ -103,5 +103,42 @@ img {
 
 .main-content {
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 200px 200px 300px;
+    grid-template-areas: 
+      "header header header"
+      "image tracklist tracklist"
+      "about about about"
+      "bottom bottom bottom"
+    ;
+    gap: 0.5rem;
+    max-width: 960%;
+}
+
+
+.header-1 {
+  grid-area: header;
+  background-color: aqua;
+  
+}
+
+.image {
+  grid-area: image;
+  background-color: aqua;
+}
+
+.tracklist {
+  grid-area: tracklist;
+  background-color: aquamarine;
+}
+
+.about {
+  grid-area: about;
+  background-color: aquamarine;
+
+}
+
+.bottom {
+  grid-area: bottom;
+  background-color: aquamarine;
 }
