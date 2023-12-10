@@ -38,9 +38,8 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto 1fr auto;
-  min-height: 100vh; 
+  min-height: 100vh;
   gap: 4px;
- 
 }
 
 header {
@@ -71,21 +70,19 @@ nav a {
 
 main {
   padding: 20px;
-  grid-row: ""; 
+  grid-row: 4;
   display: grid;
-  grid-template-columns: ""; 
+  /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
   gap: 5px;
 }
 
 .about {
     display: grid;
-    align-items: center;
     grid-column: 3;
 }
 .track-list {
     display: grid;
     grid-row: 3;
-    align-items: baseline;
 }
 
 footer {
@@ -94,51 +91,8 @@ footer {
   text-align: center;
   padding: 10px 0;
   position: relative;
-  grid-row: ""; 
+  grid-row: 4;
 }
 img {
   width: 350px;
-} */
-
-
-.main-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50px 200px 200px 300px;
-    grid-template-areas: 
-      "header header header"
-      "image tracklist tracklist"
-      "about about about"
-      "bottom bottom bottom"
-    ;
-    gap: 0.5rem;
-    max-width: 960%;
-}
-
-
-.header-1 {
-  grid-area: header;
-  background-color: aqua;
-  
-}
-
-.image {
-  grid-area: image;
-  background-color: aqua;
-}
-
-.tracklist {
-  grid-area: tracklist;
-  background-color: aquamarine;
-}
-
-.about {
-  grid-area: about;
-  background-color: aquamarine;
-
-}
-
-.bottom {
-  grid-area: bottom;
-  background-color: aquamarine;
 }
