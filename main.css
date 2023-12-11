@@ -76,7 +76,13 @@ main {
   gap: 5px;
 }*/
 
+html {
+  font-size: "";
+  
+}
+
 .main-content {
+  /*max-width: 1200px;*/
   display: grid;
   /*align-items: center;
   justify-content: center;*/
@@ -99,7 +105,7 @@ header {
   background: url(img/two.jpg);
   align-items: center;
   justify-content: space-between;
-  padding: 10px 100px;
+  padding: 1em;
   display: flex;
   z-index: 100;
   
@@ -152,4 +158,13 @@ body {
   width: 0;
   height: 4px;
   background: #fff;
+}
+
+.sub-button {
+  border: 10px solid#454a52;
+}
+
+input {
+  border: 4px double #fff;
+  border-radius: 5px;
 }
