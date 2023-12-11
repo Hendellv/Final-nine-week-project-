@@ -72,27 +72,84 @@ main {
   padding: 20px;
   grid-row: 4;
   display: grid;
-  /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
   gap: 5px;
+}*/
+
+.main-content {
+  display: grid;
+  /*align-items: center;
+  justify-content: center;*/
+  gap: 10px;
+  padding: 0.5em;
+}
+
+@media (min-width: 20em) {
+  .main-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+#albumcover {
+  width: 100%;
+}
+
+header {
+  /*background-color: #adb4bf;*/
+  background: url(img/two.jpg);
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 100px;
+  display: flex;
+  z-index: 100;
+  
 }
 
 .about {
-    display: grid;
-    grid-column: 3;
-}
-.track-list {
-    display: grid;
-    grid-row: 3;
+  grid-column: span 2;
+  border: 2px solid red;
+  padding: 4px;
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-  position: relative;
-  grid-row: 4;
+#topsongs {
+  grid-column: 1;
 }
-img {
-  width: 350px;
+
+#topclass {
+  grid-column-start: 2;
+}
+
+h1, h2, h3, p, a, ol{
+  color: #f5f5f5;
+  font-size: 1.25em;
+}
+
+body {
+  background-color: #454a52;
+  margin: 20px;
+  padding: 15px;
+  /*background: url(img/two.jpg);*/
+}
+
+#title {
+  font-weight: 700;
+  font-size: 32px;
+  
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 20px;
+  margin-left:  20px;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: #fff;
 }

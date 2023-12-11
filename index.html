@@ -9,20 +9,37 @@
     <title>Black Match</title>
 
     <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalnia:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <header class="header-1">Take Two</header>
+    <header class="header">
+      <h1 id="title">Take Two</h1>
+      <nav class="navbar">
+        <a href="#">Submit a Song</a>
+        <a href="#">About us</a>
+      </nav>
+    </header>
 
     <div class="main-content">
-     <div class="image">
-       <h2>image</h2>
-        <!--<img src="img/liltecca - tec.png" alt="TEC ablum cover" />-->
-      </div> 
+      <div class="image">
+        <!--<h2>image</h2>-->
+        <a href="https://open.spotify.com/album/4EURMuWFiLLRmQYoH5cgiE"
+          ><img
+            id="albumcover"
+            src="img/liltecca - tec.png"
+            alt="TEC ablum cover"
+            width="50%"
+        /></a>
+      </div>
       <div class="about">
-        <!--  <img src="img/liltecca - tec.png" alt="TEC ablum cover" /> -->
-        <h2>album of the week</h2>
-        <!--<p>
+        <h2>Album of the week</h2>
+        <p>
           TEC is lil Tecca's third studio album, released on Spetember 22,2023.
           Before the release of the album tecca dropped four single,
 
@@ -30,37 +47,49 @@
           in spam of the next few month he realesed <b>"500lbs"</b>,
 
           <b>"HVN ON EARTH"</b> featuring kodak and <b>"Dead or Alive"</b>.
-        </p>-->
+        </p>
       </div>
-
-      <div class="tracklist">
-        <h2>Track List</h2>
-        <!--<ol>
+      <div id="topsongs">
+        <h2>Top Songs</h2>
+        <ol>
           <li>Yves</li>
-          <li>HVN ON EARTH ft Kodak Black</li>
-          <li>Gist</li>
-          <li>500lbs</li>
-          <li>Fell in Love ft Ken Carson</li>
+          <li>Fell in Love</li>
           <li>TEC</li>
           <li>Salty</li>
-          <li>Real Discussionw</li>
+          <li>Real Discussions</li>
           <li>Dead or Alive</li>
           <li>Want it Bad</li>
-          <li>U Don't Know Tec</li>
-          <li>Used2This</li>
-          <li>Tripping On U</li>
-          <li>Either Way</li>
-          <li>Need Me</li>
-          <li>Monday to Sunday</li>
-        </ol>-->
+          <li>U Don't know Tec</li>
+        </ol>
       </div>
-      <div class="bottom">
-        <article class="playlist">
-          <h3>submit a song for our playlist</h3>
-          <input type="text" placeholder="song name" />
-          <button class="sub-button">Submit</button>
-        </article>
+
+      <div id="topclass">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
+          dicta?
+        </p>
       </div>
     </div>
+
+    <!--<div class="topsongs">
+      <article>
+        <h2>Top Songs</h2>
+        <ol>
+          <li>Yves</li>
+          <li>Fell in Love</li>
+          <li>TEC</li>
+          <li>Salty</li>
+          <li>Real Discussions</li>
+          <li>Dead or Alive</li>
+          <li>Want it Bad</li>
+          <li>U Don't know Tec</li>
+        </ol>
+      </article>
+    </div>-->
+    <footer>
+      <h3>submit a song for our playlist</h3>
+      <input type="text" placeholder="song name" />
+      <button class="sub-button">Submit</button>
+    </footer>
   </body>
 </html>
