@@ -222,7 +222,28 @@ main {
 }
 
 .right-col {
-  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 10em 10em;
+  gap: 2px;
+  grid-template-areas: 
+    "left"
+    "left"
+    "right"
+  ;
+}
+
+
+#web-player {
+  grid-area: right;
+  width: 100%;
+}
+
+#album-cover {
+  grid-area: left;
+  width: 50em;
+  border-radius: 1em;
+  border: none;
 }
 
 h1 {
@@ -252,11 +273,7 @@ button {
 
 }
 
-img {
-  width: 50em;
-  border-radius: 1em;
-  border: none;
-}
+
 
 button {
   border-radius: 2em;
