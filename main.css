@@ -74,18 +74,12 @@ main {
   display: grid;
   /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
   gap: 5px;
-}*/
-
-html {
-  font-size: "";
-  
 }
 
 .main-content {
-  /*max-width: 1200px;*/
   display: grid;
-  /*align-items: center;
-  justify-content: center;*/
+  align-items: center;
+  justify-content: center;
   gap: 10px;
   padding: 0.5em;
 }
@@ -93,19 +87,22 @@ html {
 @media (min-width: 20em) {
   .main-content {
     grid-template-columns: repeat(3, 1fr);
+
   }
 }
 
 #albumcover {
   width: 100%;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 
 header {
-  /*background-color: #adb4bf;*/
+  /*background-color: #adb4bf;
   background: url(img/two.jpg);
   align-items: center;
   justify-content: space-between;
-  padding: 1em;
+  padding: 5px 50px;
   display: flex;
   z-index: 100;
   
@@ -116,6 +113,7 @@ header {
   border: 2px solid red;
   padding: 4px;
 }
+
 
 #topsongs {
   grid-column: 1;
@@ -132,9 +130,9 @@ h1, h2, h3, p, a, ol{
 
 body {
   background-color: #454a52;
-  margin: 20px;
-  padding: 15px;
-  /*background: url(img/two.jpg);*/
+  margin: 10px;
+  padding: 5px;
+  /*background: url(img/two.jpg);
 }
 
 #title {
@@ -158,13 +156,124 @@ body {
   width: 0;
   height: 4px;
   background: #fff;
+}*/
+
+
+html {
+  font-size: 62.5%;
 }
 
-.sub-button {
-  border: 10px solid#454a52;
+body {
+  margin: 0;
+  font-family: 'Roboto Condensed';
+  font-weight: 500;
 }
 
-input {
-  border: 4px double #fff;
-  border-radius: 5px;
+.container1 {
+  max-width: 1200px;
+  margin: 2em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+nav {
+  margin: 2em;
+  font-size: 3em;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 4.1em;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+nav ul li a.potatoe::before {
+  position: absolute;
+  content: "";
+  width: 35%;
+  height: 1px;
+  border-bottom: 2px solid gold;
+  bottom: -6px;
+}
+
+main {
+  display: flex;
+  gap: 8em;
+  /*margin-top: 11em;*/
+
+}
+
+.left-col {
+  width: 45%;
+}
+
+.right-col {
+  flex-grow: 1;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+  font-family: 'Roboto Condensed';
+}
+
+
+p {
+  font-size: 1.8rem;
+  font-family: 'Kalnia';
+}
+
+form {
+  border-radius: 4em;
+}
+
+input,
+button {
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+#card-1 {
+  width: 100%;
+
+}
+
+img {
+  width: 50em;
+  border-radius: 1em;
+  border: none;
+}
+
+button {
+  border-radius: 2em;
+  box-sizing: border-box;
+  border: 1em;
+  background-color: black;
+  color: white;
+}
+
+label {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.top-songs{
+  font-size: 1.5rem;
+  font-family: 'Kalnia';
+  font-weight: 300;
+
 }

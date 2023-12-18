@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
 
-    <title>Black Match</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kalnia:wght@300&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <title>Take Two</title>
 
-  <body>
-    <header class="header">
+  <link rel="stylesheet" href="main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@300&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!--<header class="header">
+
       <h1 id="title">Take Two</h1>
       <nav class="navbar">
         <a href="#">Submit a Song</a>
@@ -28,7 +30,7 @@
 
     <div class="main-content">
       <div class="image">
-        <!--<h2>image</h2>-->
+        <!--<h2>image</h2>
         <a href="https://open.spotify.com/album/4EURMuWFiLLRmQYoH5cgiE"
           ><img
             id="albumcover"
@@ -71,7 +73,7 @@
       </div>
     </div>
 
-    <!--<div class="topsongs">
+    <div class="topsongs">
       <article>
         <h2>Top Songs</h2>
         <ol>
@@ -86,10 +88,63 @@
         </ol>
       </article>
     </div>-->
-    <footer>
-      <h3>submit a song for our playlist</h3>
-      <input type="text" placeholder="song name" />
-      <button class="sub-button">Submit</button>
-    </footer>
-  </body>
+
+  <div class="container1">
+    <header>
+      <h1 class="title-name">take two</h1>
+      <nav>
+        <ul>
+          <li><a href="" class="potatoe">Home</a></li>
+          <li><a href="">Update Form</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div clas="left-col">
+        <h1>Album of the week</h1>
+        <p>
+          TEC is lil Tecca's third studio album, released on Spetember 22,2023.
+          Before the release of the album tecca dropped four single,
+          <b>"Need Me"</b> being the first promotional sinble of the album. Then
+          in spam of the next few month he realesed <b>"500lbs"</b>,
+          <b>"HVN ON EARTH"</b> featuring kodak and <b>"Dead or Alive"</b>.
+        </p>
+
+        <h2>Top Songs</h2>
+        <ol class="top-songs">
+          <li>Yves</li>
+          <li>Fell in Love</li>
+          <li>TEC</li>
+          <li>Salty</li>
+          <li>Real Discussions</li>
+          <li>Dead or Alive</li>
+          <li>Want it Bad</li>
+          <li>U Don't know Tec</li>
+        </ol>
+
+        <div>
+          <form id="songSuggestionForm">
+            <label for="SongName">Song Name</label>
+            <input type="text" class="" name="songName" id="song-suggestion">
+            <button type="submit" value="song suggestion">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <div clas="right-col">
+        <img src="img/liltecca - tec.png" alt="TEC-Album cover">
+      </div>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('songSuggestionForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      alert('Song suggestion submitted: ' + document.getElementById('song-suggestion').value);
+      document.getElementById('songSuggestionForm').reset();
+    });
+  </script>
+</body>
+
 </html>
